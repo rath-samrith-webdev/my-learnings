@@ -54,3 +54,22 @@ let person = Person {
 
 println!("Name: {}, Age: {}, Is Student: {}", person.name, person.age, person.is_student);
 
+
+// 6. Enums
+// Enums are custom data types that allow you to define a type by enumerating its possible values. They are defined using the enum keyword and can have variants with or without associated data. Enums are useful for representing a fixed set of options or states.
+
+//Example Enums
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+}
+
+let direction = Direction::Up;
+match direction {
+    Direction::Up => println!("Going up!"),
+    Direction::Down => println!("Going down!"),
+    Direction::Left => println!("Going left!"),
+    Direction::Right => println!("Going right!"),
+}
